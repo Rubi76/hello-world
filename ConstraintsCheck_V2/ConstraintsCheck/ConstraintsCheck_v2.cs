@@ -14,6 +14,8 @@ using System.Globalization;
 
 namespace VMS.TPS
 {
+
+    // Esto es una modificación local
     #region LOCAL SCRIPT CONTEXT CLASSES
     /// <summary>
     /// Defining the local context.
