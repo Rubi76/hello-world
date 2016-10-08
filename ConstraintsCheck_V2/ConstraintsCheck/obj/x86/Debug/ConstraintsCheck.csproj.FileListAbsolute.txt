@@ -1,0 +1,6 @@
+C:\Users\aria\Documents\Visual Studio 2015\Projects2\ConstraintsCheck\ConstraintsCheck\bin\x86\Debug\ConstraintsCheck.exe.config
+C:\Users\aria\Documents\Visual Studio 2015\Projects2\ConstraintsCheck\ConstraintsCheck\obj\x86\Debug\ConstraintsCheck.csprojResolveAssemblyReference.cache
+C:\Users\Segura\Documents\Visual Studio 2015\Projects2\ConstraintsCheck\ConstraintsCheck\bin\x86\Debug\ConstraintsCheck.exe.config
+C:\Users\aria\Documents\Visual Studio 2015\Projects2\ConstraintsCheck_2\ConstraintsCheck\bin\x86\Debug\ConstraintsCheck.exe.config
+C:\Users\aria\Documents\Visual Studio 2015\Projects2\ConstraintsCheck_V2\ConstraintsCheck\bin\x86\Debug\ConstraintsCheck.exe.config
+C:\Users\Segura\Documents\Visual Studio 2015\Projects2\ConstraintsCheck_V2\ConstraintsCheck\bin\x86\Debug\ConstraintsCheck.exe.config
