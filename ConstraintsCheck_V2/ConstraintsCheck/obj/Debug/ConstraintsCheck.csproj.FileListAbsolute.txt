@@ -1,3 +1,4 @@
 C:\Users\Segura\Documents\Visual Studio 2015\Projects2\ConstraintsCheck\ConstraintsCheck\bin\Debug\ConstraintsCheck.exe.config
 C:\Users\aria\Documents\Visual Studio 2015\Projects2\ConstraintsCheck\ConstraintsCheck\bin\Debug\ConstraintsCheck.exe.config
 C:\Users\aria\Documents\Visual Studio 2015\Projects2\ConstraintsCheck\ConstraintsCheck\obj\Debug\ConstraintsCheck.csprojResolveAssemblyReference.cache
+C:\Users\Segura\Source\Repos\hello-world\ConstraintsCheck_V2\ConstraintsCheck\bin\Debug\ConstraintsCheck.exe.config
