@@ -15,7 +15,7 @@ using System.Globalization;
 namespace VMS.TPS
 {
 
-    // Esto es una modificaciÛn local
+    // Esto es una modificaci√≥n local && modificado
     #region LOCAL SCRIPT CONTEXT CLASSES
     /// <summary>
     /// Defining the local context.
@@ -681,7 +681,7 @@ namespace VMS.TPS
                     myStructures = ((ExternalPlanSetup)myPlan).StructureSet.Structures;
                     myPrescription = ((ExternalPlanSetup)myPlan).UniqueFractionation;
                 }
-                else // AtenciÛ nomÈs accepta el "primer" PlanSum
+                else // Atenci√≥ nom√©s accepta el "primer" PlanSum
                 {
                     myPlan = context.PlanSumsInScope.FirstOrDefault();
                     myStructures = context.PlanSumsInScope.FirstOrDefault().StructureSet.Structures;
@@ -832,7 +832,7 @@ namespace VMS.TPS
                 string planUID = ((PlanSetup)plan).UID;
                 constraintsList = GetFullRTPrescriptionDataBase(planUID, localContext);
             }
-            else if (context.PlanSumsInScope.Count() > 0)// AtenciÛ nomÈs accepta el "primer" PlanSum
+            else if (context.PlanSumsInScope.Count() > 0)// Atenci√≥ nom√©s accepta el "primer" PlanSum
             {
                 foreach (PlanSetup planS in ((PlanSum)plan).PlanSetups)
                 {
@@ -1060,7 +1060,7 @@ namespace VMS.TPS
                         }
                     }
                     
-                    if (!exists && (!((Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase).Success) ||  // Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase -> empieza por "p", "c", o "g" (^[pcg]) seguido de "tv" (TV) y despuÈs cualquier car·cter.
+                    if (!exists && (!((Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase).Success) ||  // Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase -> empieza por "p", "c", o "g" (^[pcg]) seguido de "tv" (TV) y despu√©s cualquier car√°cter.
                         (Regex.Match(structureID, @"drr", RegexOptions.IgnoreCase).Success) || 
                         (Regex.Match(structureID, @"fis", RegexOptions.IgnoreCase).Success) || 
                         (Regex.Match(structureID, @"couch", RegexOptions.IgnoreCase).Success) || 
@@ -1086,7 +1086,7 @@ namespace VMS.TPS
                         string structureID = Regex.Replace(StringExtensions.RemoveDiacritics(structure.Id), @"\s", "").ToLower();  
                                                                   
                         if (Regex.Replace(structureID, @"\s", "") == anatomyName && anatomyRole == 3 &&  //Item3 == 3 means constraint (neither prescription nor volume coverage)
-                        (!((Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase).Success) ||  // Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase -> empieza por "p", "c", o "g" (^[pcg]) seguido de "tv" (TV) y despuÈs cualquier car·cter.
+                        (!((Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase).Success) ||  // Regex.Match(structureID, @"^[pcg]TV", RegexOptions.IgnoreCase -> empieza por "p", "c", o "g" (^[pcg]) seguido de "tv" (TV) y despu√©s cualquier car√°cter.
                         (Regex.Match(structureID, @"drr", RegexOptions.IgnoreCase).Success) ||
                         (Regex.Match(structureID, @"fis", RegexOptions.IgnoreCase).Success) ||
                         (Regex.Match(structureID, @"couch", RegexOptions.IgnoreCase).Success) ||
@@ -1095,8 +1095,8 @@ namespace VMS.TPS
                             bool objectiveAchievedBool = false;
 
                             // Check if localRTPrescription.Item1 has format "numbers + %" (Example. 25%) or only numbers (Example. 25); 
-                            Regex regex = new Regex(@"^\d+%$"); //Empezar por (^) uno o mas n˙meros (\d+) y le sigue y finaliza con el sÌmbolo % (%$). 
-                            Regex regex1 = new Regex(@"^\d+$"); //Empezar por (^) uno o mas n˙meros (\d+) y que finalice con n˙mero($).
+                            Regex regex = new Regex(@"^\d+%$"); //Empezar por (^) uno o mas n√∫meros (\d+) y le sigue y finaliza con el s√≠mbolo % (%$). 
+                            Regex regex1 = new Regex(@"^\d+$"); //Empezar por (^) uno o mas n√∫meros (\d+) y que finalice con n√∫mero($).
                             Match match = regex.Match(Regex.Replace(localRTPrescription.Item1, @"\s$", "", RegexOptions.IgnoreCase).ToLower()); //\s$ -> eliminar los espacios finales si los hay
                             Match match1 = regex1.Match(Regex.Replace(localRTPrescription.Item1, @"\s$", "", RegexOptions.IgnoreCase).ToLower());
 
@@ -1138,7 +1138,7 @@ namespace VMS.TPS
 
                                     if (doseValue != -1) // <-- Check if the dose value has a correct format "only numbers" or "V+numbers" (V20 means Volume which receives 20 Gy)
                                     {
-                                        if (volumePresentation == "AbsoluteCm3") // °°°°°°°°°°° AbsoluteCm3 NOT VALIDATED !!!!!!!!!!!!!!!!!!
+                                        if (volumePresentation == "AbsoluteCm3") // ¬°¬°¬°¬°¬°¬°¬°¬°¬°¬°¬° AbsoluteCm3 NOT VALIDATED !!!!!!!!!!!!!!!!!!
                                         {
                                             RTPrescriptionObjectivePrint = ("V" + Math.Round((double)doseValue, 1).ToString() + "Gy" + " < " + volumeValue + " cm3");
                                             //objectiveAchievedPercentVolum = CheckDoseVolume.GetPercentVolume(myPlan, structure, doseValue, "Absolute");
@@ -1689,7 +1689,7 @@ namespace VMS.TPS
                         error = true;
                     }
                 }
-                else if (context.PlanSumsInScope.Count() > 0)// AtenciÛ nomÈs accepta el "primer" PlanSum
+                else if (context.PlanSumsInScope.Count() > 0)// Atenci√≥ nom√©s accepta el "primer" PlanSum
                 {
                     myPlan = context.PlanSumsInScope.FirstOrDefault();
                     foreach (PlanSetup planS in ((PlanSum)myPlan).PlanSetups)
