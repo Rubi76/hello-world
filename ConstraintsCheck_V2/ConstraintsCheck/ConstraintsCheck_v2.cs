@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Diagnostics;
 using System.Text;
@@ -15,7 +15,7 @@ using System.Globalization;
 namespace VMS.TPS
 {
 
-    // Esto es una modificación local && modificado
+    // Esto es una modificación local && modificado2
     #region LOCAL SCRIPT CONTEXT CLASSES
     /// <summary>
     /// Defining the local context.
